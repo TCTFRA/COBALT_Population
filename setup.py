@@ -22,32 +22,33 @@ def pop():
     
     return [nc, tr, vs, ns, total]
 
-#bot.py
-import os
+def start()
+    #bot.py
+    import os
 
-import discord
+    import discord
 
-client = discord.Client()
+    client = discord.Client()
 
-noticeme = 'notice me senpai'
+    noticeme = 'notice me senpai'
 
-@client.event
-async def on_message(message):
-    author = message.author.mention
-    authorid = message.author.id
-    print ("@{} user sent a message. (id: {})".format(author, authorid))
+    @client.event
+    async def on_message(message):
+        author = message.author.mention
+        authorid = message.author.id
+        print ("@{} user sent a message. (id: {})".format(author, authorid))
 
-    if message.content == noticeme:
-        print ('I noticed you {}!'.format(authorid))
-        await message.channel.send( 'I noticed you @{} !'.format(author))
+        if message.content == noticeme:
+            print ('I noticed you {}!'.format(authorid))
+            await message.channel.send( 'I noticed you @{} !'.format(author))
         
         
-    if message.content == 'pop':
-        [nc , tr , vs, ns , total] = pop()
-        print ('I noticed you {}!'.format(authorid))
-        await message.channel.send( '{} Sur Cobalt, il y a {} NC, {} TR, {} VS et {} NS soit {} personnes  !'.format(author, nc , tr , vs, ns , total))    
+        if message.content == 'pop':
+            [nc , tr , vs, ns , total] = pop()
+            print ('I noticed you {}!'.format(authorid))
+            await message.channel.send( '{} Sur Cobalt, il y a {} NC, {} TR, {} VS et {} NS soit {} personnes  !'.format(author, nc , tr , vs, ns , total))    
         
-client.run(TOKEN)
+    client.run(TOKEN)
 
 #   https://ps2.fisu.pw/api/population/?world=13
 
