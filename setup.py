@@ -26,6 +26,10 @@ def pop():
 #bot.py
 import os
 
+from boto.s3.connection import S3Connection
+
+clef = S3Connection(os.environ['TOKEN'])
+
 import discord
 
 
