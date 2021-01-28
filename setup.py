@@ -4,6 +4,7 @@ Created on Thu Jan 28 06:10:09 2021
 
 @author: TCT
 """
+TOKEN = TOKEN 
 
 def pop():
     import requests
