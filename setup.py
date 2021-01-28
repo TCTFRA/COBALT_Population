@@ -30,7 +30,7 @@ from boto.s3.connection import S3Connection
 
 print(os.environ)
 
-S3Connection(os.environ['TOKEN'])
+clef = os.environ['TOKEN']
 
 import discord
 
