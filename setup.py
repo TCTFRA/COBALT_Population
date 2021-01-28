@@ -1,6 +1,3 @@
-pip install discord.py
-
-
 # -*- coding: utf-8 -*-
 """
 Created on Thu Jan 28 06:10:09 2021
