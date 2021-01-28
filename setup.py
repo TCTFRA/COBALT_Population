@@ -28,13 +28,13 @@ import os
 
 from boto.s3.connection import S3Connection
 
-clef = S3Connection()
+clef = S3Connection('TOKEN')
 
 import discord
 
 
 
-client = discord.Client('TOKEN')
+client = discord.Client()
 
 noticeme = 'notice me senpai'
 
