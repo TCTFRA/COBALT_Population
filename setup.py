@@ -28,6 +28,8 @@ import os
 
 from boto.s3.connection import S3Connection
 
+print(os.environ)
+
 S3Connection(os.environ['TOKEN'])
 
 import discord
