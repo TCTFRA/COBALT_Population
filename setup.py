@@ -50,7 +50,7 @@ async def on_message(message):
         print ('I noticed you {}!'.format(authorid))
         await message.channel.send( '{} Sur Cobalt, il y a {} NC, {} TR, {} VS et {} NS soit {} personnes  !'.format(author, nc , tr , vs, ns , total))    
         
-client.run(clef)
+client.run(process.env.clef)
 
 #   https://ps2.fisu.pw/api/population/?world=13
 
