@@ -26,8 +26,6 @@ def pop():
 #bot.py
 import os
 
-import boto.s3.connection
-
 from boto.s3.connection import S3Connection
 
 clef = S3Connection(os.environ['TOKEN'])
