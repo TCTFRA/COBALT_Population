@@ -4,7 +4,7 @@ Created on Thu Jan 28 06:10:09 2021
 
 @author: TCT
 """
-TOKEN = TOKEN 
+
 
 def pop():
     import requests
@@ -50,7 +50,7 @@ async def on_message(message):
         print ('I noticed you {}!'.format(authorid))
         await message.channel.send( '{} Sur Cobalt, il y a {} NC, {} TR, {} VS et {} NS soit {} personnes  !'.format(author, nc , tr , vs, ns , total))    
         
-client.run(TOKEN)
+client.run(clef)
 
 #   https://ps2.fisu.pw/api/population/?world=13
 
