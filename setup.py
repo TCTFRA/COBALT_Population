@@ -28,7 +28,7 @@ import os
 
 from boto.s3.connection import S3Connection
 
-clef = S3Connection(AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY)
+clef = S3Connection(TOKEN)
 
 import discord
 
