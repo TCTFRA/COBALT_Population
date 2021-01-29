@@ -57,8 +57,8 @@ async def on_message(message):
         [nc , tr , vs, ns , total] = pop()
         print ('I noticed you {}!'.format(authorid))
         await message.channel.send( '{} Sur Cobalt, il y a {} NC, {} TR, {} VS et {} NS soit {} personnes  !'.format(author, nc , tr , vs, ns , total))
-        time.sleep(150)
-        essage.channel.send('pop')
+        time.sleep(15)
+        message.channel.send('pop')
        
 client.run(clef)
 
