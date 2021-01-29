@@ -56,15 +56,10 @@ async def on_message(message):
     if message.content == 'pop':
         [nc , tr , vs, ns , total] = pop()
         print ('I noticed you {}!'.format(authorid))
-        await message.channel.send( '{} Sur Cobalt, il y a {} NC, {} TR, {} VS et {} NS soit {} personnes  !'.format(author, nc , tr , vs, ns , total)) 
-        
-        while True :
-            time.sleep(300)
-            [nc , tr , vs, ns , total] = pop()
-            print(message.channel)
-            print ('I noticed you {}!'.format(authorid))
-            await message.channel.send( 'Sur Cobalt, il y a {} NC, {} TR, {} VS et {} NS soit {} personnes  !'.format( nc , tr , vs, ns , total))
-        
+        await message.channel.send( '{} Sur Cobalt, il y a {} NC, {} TR, {} VS et {} NS soit {} personnes  !'.format(author, nc , tr , vs, ns , total))
+        time.sleep(150)
+        essage.channel.send('pop')
+       
 client.run(clef)
 
 #   https://ps2.fisu.pw/api/population/?world=13
